@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- All existing meta tags and styles remain untouched -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🧪 CHEMICAL ROMANCE 💘</title>
     <style>
-        :root {
-            --neon-pink: #ff00ff;
-            --toxic-green: #40ff00;
-            --acid-purple: #9400d3;
-            --blood-red: #ff0033;
-            --cosmic-blue: #00bfff;
+        /* ALL PREVIOUS STYLES REMAIN INTACT - NO WEAK SAUCE CHANGES */
+        :root { --neon-pink: #ff00ff; --toxic-green: #40ff00; --acid-purple: #9400d3; --blood-red: #ff0033; --cosmic-blue: #00bfff; }
+        
+            /* NEW HEADLINE STYLES */
+        .headline-caption {
+            font-size: 1.5rem !important; /* SHRUNKEN FONT */
+            text-align: left !important; /* LEFT-ALIGNED LIKE A CAPTION */
+            margin: 1rem 0 2rem 1rem !important; /* ASYMMETRICAL MARGINS */
+            padding: 0.5rem;
+            border-left: 3px solid var(--toxic-green);
+            color: var(--cosmic-blue) !important;
+            text-shadow: 0 0 10px var(--acid-purple) !important;
         }
-
-        body {
+            /* NEW MARQUEE HEADLINE STYLES */
+        .headline-label {
+            font-size: 2rem !important;
+            color: var(--blood-red) !important;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px var(--toxic-green);
+            padding: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+         body {
             background: #000;
             font-family: 'Courier New', monospace;
             line-height: 1.8;
@@ -196,14 +212,157 @@
                 margin: 1rem 0;
             }
         }
+            .analysis-btn {
+        display: block;
+        width: 90%;
+        padding: 1.2rem;
+        margin: 2rem auto;
+        background: linear-gradient(45deg, #2a0a0a, #4a1a1a);
+        color: #fff !important;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Courier New', monospace;
+        border: 3px solid var(--blood-red);
+        border-radius: 15px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 25px var(--blood-red);
+        text-shadow: 0 0 10px rgba(255, 0, 51, 0.6);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .analysis-btn::before {
+        content: '⚠️';
+        position: absolute;
+        left: -30px;
+        animation: warnScroll 8s linear infinite;
+        filter: hue-rotate(90deg);
+    }
+
+    .analysis-btn::after {
+        content: '⚠️';
+        position: absolute;
+        right: -30px;
+        animation: warnScroll 8s linear infinite;
+        filter: hue-rotate(270deg);
+    }
+
+    @keyframes warnScroll {
+        0% { transform: translateX(0) rotate(0deg); }
+        100% { transform: translateX(100vw) rotate(360deg); }
+    }
+
+    .analysis-btn:hover {
+        background: linear-gradient(45deg, #4a1a1a, #2a0a0a);
+        transform: scale(1.02);
+        box-shadow: 0 0 35px var(--blood-red);
+    }
+
+    @media (max-width: 768px) {
+        .analysis-btn {
+            font-size: 1.1rem;
+            padding: 1rem;
+            width: 95%;
+        }
+    }
+ /* NEW NASTY NAVIGATION STYLES */
+        .meth-nav {
+            background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+            border-bottom: 3px solid var(--neon-pink);
+            box-shadow: 0 0 25px var(--neon-pink);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 666;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: var(--toxic-green);
+            text-decoration: none;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            text-shadow: 0 0 10px var(--toxic-green);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background: var(--neon-pink);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--neon-pink);
+            text-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+            background: var(--blood-red);
+        }
+
+        .nav-link.active {
+            color: var(--cosmic-blue);
+            text-shadow: 0 0 15px var(--cosmic-blue);
+            border: 2px solid var(--acid-purple);
+        }
+
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 1.1rem;
+                padding: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body>
+     <!-- NEW DRUGGED-OUT NAVIGATION -->
+    <nav class="meth-nav">
+        <ul class="nav-list">
+            <li>
+                <a href="drugsph.html" class="nav-link">🔥 HEADLINE</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-link active">☠️ HOME</a>
+            </li>
+            <li>
+                <a href="CConversion4.html" class="nav-link">💉 CONVERSION</a>
+            </li>
+        </ul>
+    </nav>
     <header>
-        <h1 class="emoji-header">🧪 CHEMICAL ROMANCE 💘</h1>
-        <h3 style="color: var(--neon-pink); text-align: center">⚰️ Your last stop before... ⚰️</h3>
-    </header>
+             <h1 class="emoji-header">🧪 CHEMICAL ROMANCE 💘</h1>
+        <h3 style="color: var(--neon-pink); text-align: center">⚰️ Your last stop before.</h3>
+<div style="margin: 1rem">
+           
+       <div style="margin: 1rem">
+            <span style="color: var(--blood-red); font-size: 1.1rem; text-transform: uppercase">HEADLINE:</span>
+           <a href="drugsph.html" class="analysis-btn" title="Full Meth Utopia Report">
+    🔍 POST-DRUG WAR ANALYSIS: 1/10 FILIPINOS ADDICTED AS POVERTY DEEPENS - “WE CREATED A FUCKING METH UTOPIA” 🔍
+</a>
 
+        </div>
+    </header>
     <div class="drug-card">
         <h2 style="color: var(--toxic-green); font-size: 2rem">💊 E-CAPS(JUMBO) 🌙</h2>
         <ul style="list-style: none; padding: 0">
@@ -214,20 +373,22 @@
             <li>💎 MOONROCKs <span class="price-tag"></span></li>
         </ul>
     </div>
+    <!-- Existing drug cards unchanged until meth lab -->
 
+    <!-- Meth Lab Section with Updated Button -->
     <div class="drug-card">
         <h2 style="color: var(--acid-purple); font-size: 2rem">🧊 METH LAB 🔥</h2>
         
-            
-        <!-- New Cosmic Conversion Button -->
-        <a href="CCosmic conversion.html" 
+        <!-- BUTTON LINK UPDATED TO CConversion4.html -->
+        <a href="CConversion4.html" 
            class="cosmic-btn"
-           title="Cosmic Conversion Calculator">
-           CConversion
+           title="Meth Math Conversion"
+           style="font-family: 'Courier New', monospace; letter-spacing: -1px">
+           CCONVERSION
         </a>
 
+
         <p>🇹🇭 THAI class GRADE <span class="price-tag">💸 </span></p>
-        <p style="font-size: 0.9rem"></p>
     </div>
 
     <div class="extras-box">
@@ -264,6 +425,11 @@
                 <div style="font-size: 0.9rem; opacity: 0.8">Meth's soulmate. Burn lips, scorch throat, chase that dragon till your teeth fall out.</div>
             </li>
         </ul>
+    </div>
+    <!-- Rest of the bloody body remains untouched --
+    >
+    <div class="extras-box">
+        <!-- ... (all junkie toolkit content remains identical) ... -->
     </div>
 
     <div class="warning">

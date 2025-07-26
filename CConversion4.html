@@ -12,7 +12,22 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        body {
+        body
+           <!-- NEW DRUGGED-OUT NAVIGATION -->
+    <nav class="meth-nav">
+        <ul class="nav-list">
+            <li>
+                <a href="drugsph.html" class="nav-link">🔥 HEADLINE</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-link active">☠️ HOME</a>
+            </li>
+            <li>
+                <a href="CConversion4.html" class="nav-link">💉 CONVERSION</a>
+            </li>
+        </ul>
+    </nav>
+       {
             background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             color: #e6e6e6;
             min-height: 100vh;
@@ -314,9 +329,90 @@
                 font-size: 0.9rem;
             }
         }
-    </style>
+     /* TIGHTENED COSMIC NAVIGATION */
+    .meth-nav {
+        background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #0f0c29 100%);
+        border-bottom: 1px solid #4cc9f0;
+        box-shadow: 0 2px 15px rgba(76, 201, 240, 0.3);
+        padding: 0.3rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin-bottom: -1px; /* Collapse with content */
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .nav-link {
+        color: #4cc9f0;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+        text-shadow: 0 0 8px rgba(76, 201, 240, 0.3);
+        line-height: 1.2;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        bottom: 2px;
+        left: 50%;
+        background: #f72585;
+        transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+        color: #f72585;
+        padding: 0.4rem 1rem;
+        transform: scale(1.05);
+    }
+
+    .nav-link.active {
+        color: #f72585;
+        background: rgba(76, 201, 240, 0.1);
+        box-shadow: inset 0 0 8px rgba(76, 201, 240, 0.2);
+    }
+
+    @media (max-width: 768px) {
+        .nav-list {
+            gap: 0.2rem;
+            padding: 0 0.5rem;
+        }
+        
+        .nav-link {
+            font-size: 0.9rem;
+            padding: 0.3rem 0.8rem;
+        }
+    }
+</style>
 </head>
 <body>
+  <!-- NEW DRUGGED-OUT NAVIGATION -->
+  <nav class="meth-nav">
+    <ul class="nav-list">
+        <li>
+            <a href="drugsph.html" class="nav-link">🌟 HEADLINE</a>
+        </li>
+        <li>
+            <a href="index.html" class="nav-link active">🌌 HOME</a>
+        </li>
+        <li>
+            <a href="CConversion4.html" class="nav-link">🔮 CONVERSION</a>
+        </li>
+    </ul>
+</nav>
     <div class="container">
         <header>
             <h1>Cosmic Units Converter</h1>
